@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "badge": "Software Agency · Est. 2024",
+    "h1": "Architects",
+    "h1accent": "of Identity.",
+    "subtitle": "Merging graphic design precision with network-grade engineering to build digital ecosystems that endure."
+  },
+  "portfolio": {
+    "label": "Selected Work",
+    "heading": "The Showcase.",
+    "projects": [
+      {
+        "id": "hl-ekonomi",
+        "number": "01",
+        "title": "HL Ekonomi",
+        "location": "Stockholm, Sweden",
+        "category": "Financial Consultancy",
+        "description": "A full-service digital transformation for a Swedish financial consultancy. Sleek UX architecture, automated workflows, and a premium brand system engineered for regulatory trust.",
+        "tags": [
+          "Next.js",
+          "TypeScript",
+          "Framer Motion",
+          "Brand Identity"
+        ]
+      },
+      {
+        "id": "kulla-web",
+        "number": "02",
+        "title": "KullaWeb",
+        "location": "Digital Agency",
+        "category": "Web Architecture",
+        "description": "High-fidelity web architecture and branding for a digital agency. Clean code, scalable design system, and micro-interaction suite that sets a new standard for studio presence.",
+        "tags": [
+          "React",
+          "GSAP",
+          "CSS Architecture",
+          "Scalable Design"
+        ]
+      }
+    ]
+  },
+  "services": {
+    "label": "The Hybrid Approach",
+    "heading": "Services.",
+    "items": [
+      {
+        "id": "identity",
+        "title": "Identity Engineering",
+        "subtitle": "Beyond Logos",
+        "description": "We architect technical design systems—living, scalable frameworks that encode brand DNA into every pixel, component, and interaction.",
+        "features": [
+          "Brand DNA System",
+          "Component Libraries",
+          "Design Token Architecture",
+          "Cross-Platform Consistency"
+        ]
+      },
+      {
+        "id": "webdev",
+        "title": "Next-Gen Web Dev",
+        "subtitle": "Vibe-Coding Methodology",
+        "description": "Rapid, AI-assisted development without sacrificing architectural integrity. Production-grade apps that score 100/100 on Lighthouse.",
+        "features": [
+          "Next.js App Router",
+          "TypeScript-First",
+          "AI-Assisted Workflows",
+          "Performance Obsession"
+        ]
+      },
+      {
+        "id": "network",
+        "title": "Network & Security",
+        "subtitle": "CCNA-Level Infrastructure",
+        "description": "Enterprise-grade security protocols and network architecture for data-sensitive environments.",
+        "features": [
+          "CCNA Infrastructure",
+          "Zero-Trust Architecture",
+          "Cloud Security",
+          "Compliance Frameworks"
+        ]
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Solo Agility",
+    "heading": "The Model.",
+    "description": "The efficiency of a solo operator wielding enterprise-grade tooling. No fiscal hardware overhead—pure digital integration and cloud-based solutions.",
+    "ctaHeading": "Let's build something that endures.",
+    "ctaButton": "Start a Conversation"
+  },
+  "contact": {
+    "label": "Get In Touch",
+    "heading": "Let's Architect.",
+    "description": "Have a project in mind? Looking to build a digital ecosystem that stands the test of time? Let's connect and architect something exceptional together.",
+    "email": "hello@sferadigital.com",
+    "linkedin": "linkedin.com/in/sferadigital",
+    "github": "github.com/sferadigital"
+  },
+  "footer": {
+    "tagline": "Swiss minimalism meets high-end engineering. Building digital ecosystems that endure."
+  }
+}
