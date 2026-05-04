@@ -1,18 +1,34 @@
-import fs from 'fs';
-import path from 'path';
+import { supabase } from './supabase';
 
-const contentPath = path.join(process.cwd(), 'content.json');
-
-export function getContent() {
+export async function getContent() {
   try {
-    const raw = fs.readFileSync(contentPath, 'utf-8');
-    return JSON.parse(raw);
-  } catch {
+    const { data, error } = await supabase
+      .from('site_content')
+      .select('data')
+      .eq('id', 1)
+      .single();
+
+    if (error) {
+      console.error('Supabase fetch error:', error);
+      return null;
+    }
+    return data.data;
+  } catch (err) {
+    console.error('Content fetch failed:', err);
     return null;
   }
 }
 
-export function saveContent(data: unknown) {
-  const json = JSON.stringify(data, null, 2);
-  fs.writeFileSync(contentPath, json, 'utf-8');
+export async function saveContent(data: unknown) {
+  try {
+    const { error } = await supabase
+      .from('site_content')
+      .upsert({ id: 1, data: data });
+
+    if (error) throw error;
+    return { ok: true };
+  } catch (err) {
+    console.error('Supabase save error:', err);
+    return { error: err };
+  }
 }

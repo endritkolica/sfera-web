@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "@supabase/supabase-js": "^2.105.3",
     "framer-motion": "^12.38.0",
     "jose": "^6.2.3",
     "lucide-react": "^1.14.0",

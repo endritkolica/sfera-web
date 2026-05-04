@@ -6,8 +6,8 @@ import PricingSection from "@/components/PricingSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
-export default function Home() {
-  const content = getContent();
+export default async function Home() {
+  const content = await getContent();
   return (
     <main>
       <HeroSection content={content?.hero} />

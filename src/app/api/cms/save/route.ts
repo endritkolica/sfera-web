@@ -28,7 +28,7 @@ export async function POST(req: NextRequest) {
   const clean = sanitize(body);
 
   try {
-    saveContent(clean);
+    await saveContent(clean);
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error('Save failed:', err);
