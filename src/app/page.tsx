@@ -6,6 +6,8 @@ import PricingSection from "@/components/PricingSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const content = await getContent();
   return (
